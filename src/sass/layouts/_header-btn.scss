@@ -1,0 +1,215 @@
+.header__btn{
+   
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 45px 10px 45px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.31;
+    border-radius: 22px;
+    background-color: $base-white-color;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    position: relative;
+    transition: 0.25s;
+     
+     transition-property: color, background,transform;
+     transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover{
+     transform: translateY(-4px);
+     box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, .5);
+     background-color: $dark-pink-text-color;
+     color: $base-white-color;
+ }
+
+ &:hover .btn__icon{
+     fill: $base-white-color;
+ }
+    
+  @media screen and (max-width:1199px){
+      position: absolute;
+      
+      top: 60px;
+ }
+ @media screen and (min-width:1200px){
+     padding: 10px 45px 10px 45px;
+     margin-left: 110px;
+ }
+}
+
+.header__btn--desc{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.31;
+    border-radius: 22px;
+    padding: 10px 45px 10px 45px;
+    top: 60px;
+    border-radius: 22px;
+
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+     transition-property: color, background,transform;
+     transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
+    
+    color: $dark-pink-text-color;
+    background-color: $base-white-color; 
+
+     &:hover{
+     transform: translateY(-4px);
+     box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, .5);
+     background-color: $dark-pink-text-color;
+     color: $base-white-color;
+ }
+
+ &:hover .btn__icon{
+     fill: $base-white-color;
+ }
+
+    @media screen and (min-width:768px) and (max-width:1199px){
+        display: inline-flex;
+       
+}
+
+}
+
+.btn__icon{
+    margin-left: 12px;
+    transition-property: fill;
+     transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    fill: $dark-pink-text-color;
+}
+
+.btn {
+  top: 2rem;
+  right: 2rem;
+  z-index: 10;
+  width: 20px;
+  height: 15px;
+  
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  top: 25px;
+  user-select: none;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.1s ease-in-out;
+
+   @media screen and (max-width:768px){
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+     @media screen and (min-width:1200px){
+        display: none;
+        
+    }
+}
+
+  
+
+.btnOpen{
+  margin-left: auto;
+  @media (min-width:768px) {
+    margin-left: 250px;
+  }
+    
+}
+
+.btnClose {
+     position: absolute;
+     z-index: 9;
+     transform: translateX(100%);
+     background-color: inherit;
+     fill: ivory;
+     right: 28px;
+     opacity: 0;
+
+}
+
+.btn-jittery {
+    -webkit-animation: jittery 4s infinite;
+    animation: jittery 4s infinite;
+}
+
+
+#back-top {
+    position: fixed;
+    bottom: 450px;
+    
+
+    @media screen and (max-width:767px) {
+      bottom: 300px;
+    }
+    @media screen and (min-width:1200px) {
+      margin-left: 20px;
+    }
+}
+#back-top a {
+    // width: 108px;
+    display: block;
+    text-align: center;
+    font: 11px/100% Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    /* переход */
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+#back-top a:hover {
+    color: #000;
+}
+/* иконка стрелки (тег span) */
+#back-top span {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-bottom: 7px;
+    background: url("../images/back-top.svg") no-repeat center center;
+    background-size: contain;
+    background-color: rgba(255, 255, 255, 0.774);
+    border-radius: 25px;
+    transition: 1s;
+}
+
+
+
+@keyframes jittery {
+  5%,
+  50% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  15% {
+    transform: scale(1.15);
+  }
+  20% {
+    transform: scale(1.15) rotate(-5deg);
+  }
+  25% {
+    transform: scale(1.15) rotate(5deg);
+  }
+  30% {
+    transform: scale(1.15) rotate(-3deg);
+  }
+  35% {
+    transform: scale(1.15) rotate(2deg);
+  }
+  40% {
+    transform: scale(1.15) rotate(0);
+  }
+}
+

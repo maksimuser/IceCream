@@ -1,0 +1,131 @@
+.page-header{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+}
+
+.container--centred{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width:767px){
+       padding-top: 9px;
+    }
+    
+     @media (min-width:768px){
+       padding-top: 37px;
+    }
+}
+
+.logo{
+    display: inline-block;
+
+   
+@media screen and (min-width:1200px){
+   position: relative;
+   left: -70px;
+}
+}
+.header__menu{
+    display: flex;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    @media screen and (min-width:1200px){
+    transform: none !important;
+ }
+    
+    @media screen and (max-width:1199px){
+        position: fixed;
+        transform: translateX(100%);
+        width: 254px;
+        height: 500px;
+        border-radius: 0 0 15px 15px;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        background: linear-gradient(90deg, #ee5c87, #f1a4b5, #ee5c87);
+    }
+}
+   
+.nav{
+    
+     @media screen and (max-width:1199px){
+       position: absolute; 
+       width: 100%;
+       top: 123px;
+    }
+
+}
+
+.nav__block{
+    @media screen and (min-width:1200px){
+        display: flex;
+    }
+}
+
+.nav__link{
+
+    display: inline-block;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.28;
+    padding: 12px 0px 12px 0px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    color: $base-white-color;
+
+    @media screen and (max-width:1199px){
+       margin-left: 24px;
+    }
+    @media screen and (min-width:1200px){
+       
+       font-size: 16px;
+       line-height: 1.31;
+    }
+
+}
+ 
+
+.nav__item{
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+  transition: background 0.2s ease-in;
+  opacity: 1;
+  
+ @media screen and (min-width:1200px){
+ transform: none !important;
+ }
+
+  @media screen and (max-width:1199px){
+       border-bottom: 1px solid #E18298;
+    }
+}
+
+
+.nav__item:first-child{
+       @media screen and (max-width:1199px){
+       border-top: 1px solid #E18298;
+    }
+}
+
+.nav__item:hover .nav__link{
+transform: translateY(-4px);
+text-shadow: 3px 3px 0px rgba(0,0,0,0.3);
+color: $dark-pink-text-color;
+}
+
+
+.nav__item + .nav__item {
+    @media screen and (min-width:1200px){
+        margin-left: 35px;
+    }
+    
+}
+
+
+
+
+

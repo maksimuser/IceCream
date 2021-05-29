@@ -1,0 +1,159 @@
+.footer {
+  background-color: $light-pink-background-color;
+}
+
+.footer-title_1 {
+  font-family: Titan One;
+  font-size: 50px;
+  line-height: 1;
+  text-align: left;
+  color: $dark-pink-text-color;
+//   display: block;
+  font-weight: normal;
+
+  @media screen and (max-width: 767px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.footer-title_2 {
+  font-family: Titan One;
+  font-size: 50px;
+  line-height: 1;
+  text-align: left;
+  font-weight: normal;
+  color: $dark-pink-text-color;
+
+  @media screen and (max-width: 767px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    display: block;
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.footer-top {
+  margin-top: 16px;
+}
+
+.footer-tablet {
+  @media screen and (min-width: 767px) {
+    display: flex;
+  }
+}
+
+.footer-box {
+  width: 80%;
+
+  @media screen and (max-width: 1199px) and (min-width: 768px) {
+    margin-right: 92px;
+    width: 340px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 690px;
+    margin-right: 15px;
+  }
+}
+
+.follow-box {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 46px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 43px;
+  }
+}
+
+.follow-list {
+  margin-bottom: 36px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.follow-item {
+  background-color: #fea5bb;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $dark-pink-text-color;
+  }
+}
+
+.follow-item__icon {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  fill: $base-white-color;
+}
+
+.follow-item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.tell-box {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.86;
+  text-align: right;
+
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 1.8;
+    margin-bottom: 43px;
+  }
+
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+}
+
+.tell-phone {
+  color: $dark-pink-text-color;
+}
+
+.copyright-box {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  color: #907e82;
+  border-top: 1px solid #e1e1e1;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+  }
+}
+
+.copyright {
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+}
