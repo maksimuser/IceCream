@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://maksimuser.github.io/IceCream",
+  "homepage": "https://maksimuser.gigthub.io/IceCream",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html",
